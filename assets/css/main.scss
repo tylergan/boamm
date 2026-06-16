@@ -259,6 +259,26 @@ img { max-width: 100%; height: auto; }
 .highlight .nt { color: #E89A5C; }
 .highlight .na { color: #7FC8C0; }
 
+/* ── Mermaid diagrams ──────────────────────────────────────── */
+.mermaid {
+  margin: 2.2rem 0;
+  text-align: center;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.4rem;
+  box-shadow: var(--shadow);
+  overflow-x: auto;
+}
+.mermaid svg { max-width: 100%; height: auto; }
+/* While the library loads, hide the raw source and show a quiet placeholder. */
+.mermaid-pending { font-size: 0; min-height: 80px; position: relative; }
+.mermaid-pending::after {
+  content: "rendering diagram…";
+  display: block; font-family: var(--mono); font-size: 0.78rem;
+  color: var(--ink-faint); padding: 1.6rem 0;
+}
+
 /* ── Post footer / nav ─────────────────────────────────────── */
 .post-footer { margin-top: 3.5rem; padding-top: 2rem; border-top: 1px solid var(--line); }
 .post-nav { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem; }
