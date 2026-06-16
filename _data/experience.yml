@@ -1,26 +1,76 @@
 # ──────────────────────────────────────────────────────────────
-#  EDIT ME — your experience timeline (newest first).
-#  This drives the "Experience" section on the About page.
-#  Copy a block to add a new role. Leave `points` out if you
-#  don't want bullet points for an entry.
+#  Experience timeline (newest first) — drives the About page.
+#  Copy a block to add a role; remove `points` if you don't want
+#  bullet points for an entry.
 # ──────────────────────────────────────────────────────────────
 
-- when: "2024 — Present"
+- when: "Mar 2026 — Present"
   role: "Associate Software Engineer"
   org: "Canva"
-  summary: "[EDIT ME — one line on your team and what you build.]"
+  summary: "Infrastructure · Platform Enablement · Configuration"
   points:
-    - "[EDIT ME — something you've shipped or contributed to]"
-    - "[EDIT ME — a technology / domain you work in]"
+    - "Changing how Canva writes and dispatches configuration."
+    - "Engineering and enabling initiatives like analytics for our PaaS platform."
 
-- when: "20XX — 2024"
-  role: "[Previous role]"
-  org: "[Company / University]"
-  summary: "[EDIT ME — internship, degree, or earlier role.]"
+- when: "Aug 2025 — Jan 2026"
+  role: "Management Consulting Analyst"
+  org: "Accenture"
+  summary: "Consulting · Tech Strategy & Advisory"
   points:
-    - "[EDIT ME — a highlight]"
+    - "Delivered Salesforce data migration and remediation for a major healthcare client, improving tool efficiency 5×."
+    - "Supported transformation planning for a global insurer and built internal financial-planning MVPs to accelerate business cases."
 
-- when: "20XX — 20XX"
-  role: "[Earlier role or education]"
-  org: "[Organisation]"
-  summary: "[EDIT ME — optional.]"
+- when: "Jun 2025 — Aug 2025"
+  role: "Software Engineer Intern"
+  org: "TikTok"
+  summary: "Trust & Safety · Direct Messaging"
+  points:
+    - "Scaled messaging safety systems by integrating new message types into moderation pipelines."
+    - "Built a Redis middleware that cut CPU usage from 26% to 14%, lowering infra cost while supporting 3.5M QPS."
+
+- when: "Dec 2024 — Feb 2025"
+  role: "Software Engineer Intern"
+  org: "Canva"
+  summary: "Infrastructure · Platform as a Service"
+  points:
+    - "Reduced API latency by 99% and built monitoring for 2,000+ services' provisioned resources."
+    - "Supported strategic PaaS and disaster-recovery objectives."
+
+- when: "Feb 2024 — Sep 2024"
+  role: "Software Engineer Intern"
+  org: "TikTok"
+  summary: "Trust & Safety · Comments"
+  points:
+    - "Integrated ML models into moderation pipelines, improving performance metrics by 3% for a US$800k/month product."
+    - "Increased comment-update batch operations 100× for an internal comment-audit platform."
+
+- when: "Dec 2023 — Feb 2024"
+  role: "Software Engineer Intern"
+  org: "Goldman Sachs"
+  summary: "Site Reliability · Electronic Trading (Global Banking & Markets)"
+  points:
+    - "Automated 500+ broker-migration test scenarios."
+    - "Built an onboarding microservice that eliminated manual handoffs."
+
+- when: "Jul 2023 — Dec 2023"
+  role: "Third Party Acquisition Analyst Intern (Co-op)"
+  org: "American Express"
+  summary: "Global Merchants & Services · Third-Party Acquisition"
+  points:
+    - "Built a Random Forest anomaly-detection tool that cut review time by 90%."
+    - "Adopted across Risk and Audit teams in Australia, India, and Hong Kong."
+
+- when: "Sep 2022 — Feb 2023"
+  role: "Management Consulting Intern (Co-op)"
+  org: "EY"
+  summary: "Technology Solution Delivery"
+  points:
+    - "Contributed to consulting proposals and built frontend features for a risk-analytics platform used by a top-3 Australian insurer."
+
+- when: "Feb 2022 — Aug 2022"
+  role: "Quality Assurance Intern (Co-op)"
+  org: "humm group"
+  summary: "Titan Squad"
+  points:
+    - "Ran regression testing for a legacy customer portal, reducing reported defects."
+    - "Automated operational workflows in Python."

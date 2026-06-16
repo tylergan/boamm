@@ -13,19 +13,21 @@ permalink: /about/
   ──────────────────────────────────────────────────────────────
 -->
 
-{{ site.author.intro }}
+I'm currently a **Software Engineer at Canva**, with prior software engineering experience at **TikTok** and **Goldman Sachs**, and strategy/fintech roles at **Accenture**, **American Express**, **EY**, and **Humm**. I have a strong interest in finance and technology, and I try to stay current with both emerging tech and macro trends.
 
-I'm currently an **{{ site.author.role }}** at **{{ site.author.company }}**, based in {{ site.author.location }}. This site is my working notebook — a place to slow down at the end of the day and turn what I did into something I actually understand. Less a portfolio, more a thinking-out-loud.
+Outside of work, I like to go to the gym, get outdoors, and eat the occasional cheesecake. 🍰
+
+This site is my working notebook — a place to slow down at the end of the day and turn what I did into something I actually understand. Less a portfolio, more a thinking-out-loud.
 
 ## Why I write here
 
-[EDIT ME — a few honest sentences on what reflection does for you. e.g. "I find that the act of writing forces me to notice the gap between 'I saw this work' and 'I understand why it works.' If I can't explain a thing here, I didn't really learn it."]
+Reflection is how I check that I'm actually learning, not just busy. Writing an entry forces me to notice the gap between "I saw this work" and "I understand *why* it works" — and if I can't explain a thing here, that's a signal I haven't really learned it yet. <!-- EDIT ME — make this yours -->
 
 ## What I'm focused on right now
 
-- [EDIT ME — a current area you're going deep on, e.g. "Getting fluent in the codebase I work in"]
-- [EDIT ME — a skill you're deliberately practicing]
-- [EDIT ME — something outside work you're learning]
+- Changing how Canva writes and dispatches configuration, and building analytics for our PaaS platform.
+- Getting deeply fluent in a large, mature codebase — reading before writing.
+- Connecting the engineering I do day-to-day to the finance and macro trends I follow. <!-- EDIT ME — tweak freely -->
 
 ## Experience
 

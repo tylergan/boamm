@@ -25,14 +25,14 @@ description: >-
 # Everything about you. The about page and headers read from here.
 author:
   name: "Tyler Gan"
-  role: "Associate Software Engineer"     # EDIT ME
-  company: "Canva"                          # EDIT ME
-  location: "Sydney, Australia"             # EDIT ME
+  role: "Associate Software Engineer"
+  company: "Canva"
+  location: "Sydney, Australia"
   # Short first-person intro shown on the home hero and about page.
   intro: >-
-    I'm a software engineer at Canva. I use this space to reflect on what
-    I'm learning, slow down, and turn the day's work into something I
-    actually understand.
+    I'm a software engineer at Canva working on infrastructure and platform
+    enablement. I use this space to reflect on what I'm learning, slow down,
+    and turn the day's work into something I actually understand.
   # These phrases get "typed out" in the hero animation. Add/remove freely.
   typed:
     - "consolidating what I learn, one entry at a time."
@@ -43,8 +43,8 @@ author:
 # Social / contact links. Leave a value blank ("") to hide that link.
 social:
   github: "tylergan"          # username only
-  linkedin: ""                # EDIT ME — your linkedin vanity, e.g. "tyler-gan"
-  email: ""                   # EDIT ME — e.g. "you@example.com"
+  linkedin: "tylergan"        # linkedin vanity (linkedin.com/in/tylergan)
+  email: ""                   # EDIT ME — add a public email if you want one shown
   twitter: ""
 
 # ── Build settings (you usually won't touch these) ──────────────
