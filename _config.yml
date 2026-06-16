@@ -1,0 +1,85 @@
+# ─────────────────────────────────────────────────────────────
+#  Site configuration
+#
+#  This file is your site's control panel. Most things you'll
+#  want to change day-to-day live under `author:` below.
+#
+#  After editing this file you must restart `jekyll serve`
+#  locally for changes to take effect (GitHub Pages rebuilds
+#  automatically on push).
+# ─────────────────────────────────────────────────────────────
+
+# Where the site lives.
+#  - Project site (current):  url = https://tylergan.github.io , baseurl = "/boamm"
+#  - Root user site later:    url = https://tylergan.github.io , baseurl = ""
+# To migrate to a tylergan.github.io repo, just set baseurl to "" — nothing else changes.
+url: "https://tylergan.github.io"
+baseurl: "/boamm"
+
+title: "Tyler Gan"
+tagline: "Reflections on building, learning, and figuring it out."
+description: >-
+  A personal log of what I'm learning as a software engineer at Canva —
+  written mostly to think clearly and consolidate the day.
+
+# Everything about you. The about page and headers read from here.
+author:
+  name: "Tyler Gan"
+  role: "Associate Software Engineer"     # EDIT ME
+  company: "Canva"                          # EDIT ME
+  location: "Sydney, Australia"             # EDIT ME
+  # Short first-person intro shown on the home hero and about page.
+  intro: >-
+    I'm a software engineer at Canva. I use this space to reflect on what
+    I'm learning, slow down, and turn the day's work into something I
+    actually understand.
+  # These phrases get "typed out" in the hero animation. Add/remove freely.
+  typed:
+    - "consolidating what I learn, one entry at a time."
+    - "reading the code before I write the code."
+    - "turning confusion into understanding."
+    - "building at Canva, reflecting here."
+
+# Social / contact links. Leave a value blank ("") to hide that link.
+social:
+  github: "tylergan"          # username only
+  linkedin: ""                # EDIT ME — your linkedin vanity, e.g. "tyler-gan"
+  email: ""                   # EDIT ME — e.g. "you@example.com"
+  twitter: ""
+
+# ── Build settings (you usually won't touch these) ──────────────
+markdown: kramdown
+highlighter: rouge
+permalink: /writing/:year/:month/:title/
+timezone: Australia/Sydney
+
+kramdown:
+  syntax_highlighter: rouge
+  input: GFM
+  hard_wrap: false
+
+# Default front matter so new posts need almost no boilerplate.
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+    values:
+      layout: page
+
+sass:
+  style: compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .jekyll-cache
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag

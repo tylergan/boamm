@@ -1,0 +1,26 @@
+# ──────────────────────────────────────────────────────────────
+#  EDIT ME — your experience timeline (newest first).
+#  This drives the "Experience" section on the About page.
+#  Copy a block to add a new role. Leave `points` out if you
+#  don't want bullet points for an entry.
+# ──────────────────────────────────────────────────────────────
+
+- when: "2024 — Present"
+  role: "Associate Software Engineer"
+  org: "Canva"
+  summary: "[EDIT ME — one line on your team and what you build.]"
+  points:
+    - "[EDIT ME — something you've shipped or contributed to]"
+    - "[EDIT ME — a technology / domain you work in]"
+
+- when: "20XX — 2024"
+  role: "[Previous role]"
+  org: "[Company / University]"
+  summary: "[EDIT ME — internship, degree, or earlier role.]"
+  points:
+    - "[EDIT ME — a highlight]"
+
+- when: "20XX — 20XX"
+  role: "[Earlier role or education]"
+  org: "[Organisation]"
+  summary: "[EDIT ME — optional.]"

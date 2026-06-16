@@ -1,0 +1,20 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#FFF8F0">
+
+{%- if page.title -%}
+  <title>{{ page.title }} · {{ site.title }}</title>
+{%- else -%}
+  <title>{{ site.title }} · {{ site.tagline }}</title>
+{%- endif -%}
+
+{% seo %}
+{%- feed_meta -%}
+
+<!-- Fonts: Fraunces (serif display), Inter (body), JetBrains Mono (technical accents) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml">

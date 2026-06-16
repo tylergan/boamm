@@ -1,0 +1,21 @@
+<footer class="site-footer reveal">
+  <div class="footer-inner">
+    <p class="footer-note">
+      <span class="footer-mark" aria-hidden="true">✦</span>
+      Written and maintained by {{ site.author.name }}.
+    </p>
+    <nav class="footer-links" aria-label="Social">
+      {%- if site.social.github and site.social.github != "" -%}
+        <a href="https://github.com/{{ site.social.github }}" target="_blank" rel="me">GitHub</a>
+      {%- endif -%}
+      {%- if site.social.linkedin and site.social.linkedin != "" -%}
+        <a href="https://www.linkedin.com/in/{{ site.social.linkedin }}" target="_blank" rel="me">LinkedIn</a>
+      {%- endif -%}
+      {%- if site.social.email and site.social.email != "" -%}
+        <a href="mailto:{{ site.social.email }}">Email</a>
+      {%- endif -%}
+      <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+    </nav>
+    <p class="footer-fine">© <span id="year">{{ site.time | date: '%Y' }}</span> {{ site.author.name }} · Built with Jekyll &amp; GitHub Pages</p>
+  </div>
+</footer>

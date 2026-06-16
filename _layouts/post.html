@@ -1,0 +1,45 @@
+---
+layout: default
+body_class: post-page
+---
+
+<article class="post">
+  <header class="post-header reveal">
+    <a class="back-link mono" href="{{ '/' | relative_url }}">← all writing</a>
+    <div class="post-meta">
+      <time class="mono" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+      {% assign words = content | number_of_words %}
+      <span class="mono dot">·</span>
+      <span class="mono">{{ words | divided_by: 200 | plus: 1 }} min read</span>
+    </div>
+    <h1 class="post-title">{{ page.title }}</h1>
+    {% if page.subtitle %}<p class="post-subtitle">{{ page.subtitle }}</p>{% endif %}
+    {% if page.tags.size > 0 %}
+    <div class="post-tags">
+      {% for tag in page.tags %}<span class="tag mono">#{{ tag }}</span>{% endfor %}
+    </div>
+    {% endif %}
+  </header>
+
+  <div class="post-body prose reveal">
+    {{ content }}
+  </div>
+
+  <footer class="post-footer reveal">
+    <div class="post-nav">
+      {% if page.previous %}
+        <a class="post-nav-link prev" href="{{ page.previous.url | relative_url }}">
+          <span class="mono">← previous</span>
+          <span class="post-nav-title">{{ page.previous.title }}</span>
+        </a>
+      {% else %}<span></span>{% endif %}
+      {% if page.next %}
+        <a class="post-nav-link next" href="{{ page.next.url | relative_url }}">
+          <span class="mono">next →</span>
+          <span class="post-nav-title">{{ page.next.title }}</span>
+        </a>
+      {% endif %}
+    </div>
+    <a class="back-link mono" href="{{ '/' | relative_url }}">← back to all writing</a>
+  </footer>
+</article>

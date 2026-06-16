@@ -1,0 +1,17 @@
+<header class="site-header reveal">
+  <a class="brand" href="{{ '/' | relative_url }}">
+    <span class="brand-mark" aria-hidden="true">✦</span>
+    <span class="brand-name">{{ site.author.name }}</span>
+  </a>
+
+  <nav class="site-nav" aria-label="Primary">
+    <a href="{{ '/' | relative_url }}">Writing</a>
+    <a href="{{ '/about/' | relative_url }}">About</a>
+    {%- if site.social.github and site.social.github != "" -%}
+    <a href="https://github.com/{{ site.social.github }}" rel="me" target="_blank">GitHub</a>
+    {%- endif -%}
+    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+      <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+    </button>
+  </nav>
+</header>
