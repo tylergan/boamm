@@ -148,6 +148,12 @@ img { max-width: 100%; height: auto; }
   line-height: 1.02; letter-spacing: -0.025em; margin: 0 0 1.1rem;
   font-variation-settings: "opsz" 144;
 }
+.hero-tagline {
+  font-family: var(--serif); font-style: italic; font-size: clamp(1.15rem, 3vw, 1.5rem);
+  color: var(--terracotta-2); margin: 0 0 1.2rem; letter-spacing: -0.01em;
+}
+.hero-tagline span { color: var(--terracotta); font-style: normal; }
+
 .hero-typed {
   font-family: var(--mono); font-size: clamp(0.95rem, 2.4vw, 1.12rem); color: var(--ink-soft);
   margin: 0 0 1.6rem; min-height: 1.6em;

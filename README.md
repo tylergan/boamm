@@ -1,6 +1,7 @@
-# Tyler Gan — reflections & learning blog
+# BOAMM — Blog of a Messy Mind
 
-A personal blog where the **repository is the database**. Each entry is a
+Tyler Gan's personal reflections & learning blog. A space where the
+**repository is the database**. Each entry is a
 Markdown file; GitHub Pages turns it into a styled page automatically. No
 backend, no build server to babysit — just write Markdown and push.
 
