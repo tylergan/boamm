@@ -36,7 +36,7 @@ layout: default
     <p class="empty-note reveal">No entries yet. Add your first markdown file to <code>_posts/</code> — see the README.</p>
   {% else %}
   <div class="card-grid">
-    {% for post in site.posts %}
+    {% for post in site.posts limit: 6 %}
     <article class="card reveal">
       <a class="card-link" href="{{ post.url | relative_url }}">
         <div class="card-meta">
@@ -57,5 +57,8 @@ layout: default
     </article>
     {% endfor %}
   </div>
+  {% if site.posts.size > 6 %}
+  <p class="view-all reveal"><a class="view-all-link" href="{{ '/writing/' | relative_url }}">View all {{ site.posts | size }} reflections →</a></p>
+  {% endif %}
   {% endif %}
 </section>

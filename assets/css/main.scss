@@ -207,6 +207,30 @@ img { max-width: 100%; height: auto; }
 
 .empty-note { color: var(--ink-soft); background: var(--surface); border: 1px dashed var(--line-strong); border-radius: var(--radius); padding: 1.5rem; }
 
+.view-all { margin-top: 2.4rem; text-align: center; }
+.view-all-link { font-family: var(--mono); font-size: 0.9rem; color: var(--terracotta-2); transition: transform 0.25s var(--ease); display: inline-block; }
+.view-all-link:hover { color: var(--terracotta); transform: translateX(3px); }
+
+/* ── Archive (the /writing/ index) ─────────────────────────── */
+.archive-year { margin: 2.6rem 0; }
+.archive-year-title {
+  color: var(--ink-faint); font-size: 0.9rem; letter-spacing: 0.06em;
+  border-bottom: 1px solid var(--line); padding-bottom: 0.5rem; margin: 0 0 0.4rem;
+}
+.archive-list { list-style: none; margin: 0; padding: 0; }
+.archive-item {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 0.9rem;
+  padding: 0.85rem 0; border-bottom: 1px solid var(--line);
+}
+.archive-link { display: inline-flex; align-items: baseline; gap: 0.9rem; color: var(--ink); flex: 1; min-width: 0; }
+.archive-date { color: var(--ink-faint); flex: none; width: 4rem; }
+.archive-title { font-family: var(--serif); font-size: 1.18rem; font-weight: 500; letter-spacing: -0.01em; }
+.archive-link:hover .archive-title { color: var(--terracotta-2); }
+.archive-tags { display: flex; gap: 0.35rem; flex-wrap: wrap; }
+@media (max-width: 540px) {
+  .archive-link { gap: 0.2rem 0.9rem; flex-wrap: wrap; }
+}
+
 /* ── Post / page ───────────────────────────────────────────── */
 .post, .page-doc { max-width: var(--maxw); margin: 2rem auto 4rem; padding: 0 1.5rem; }
 .post-header, .page-head { margin-bottom: 2.4rem; }
