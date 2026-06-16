@@ -5,7 +5,6 @@ body_class: post-page
 
 <article class="post">
   <header class="post-header reveal">
-    <a class="back-link mono" href="{{ '/' | relative_url }}">← back home</a>
     <div class="post-meta">
       <time class="mono" datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
       {% assign words = content | number_of_words %}
