@@ -130,10 +130,15 @@
       mermaidNodes.push(div);
     });
 
-    var s = document.createElement("script");
-    s.src = "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.min.js";
-    s.onload = renderMermaid;
-    document.head.appendChild(s);
+    // Mermaid v11 ships as an ES module — the classic bundle assigns to an
+    // internal name rather than window.mermaid — so load it via dynamic
+    // import() and hand its default export to our renderer.
+    import("https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs")
+      .then(function (mod) {
+        window.mermaid = mod.default || mod;
+        renderMermaid();
+      })
+      .catch(function (e) { if (window.console) console.error("Mermaid load error:", e); });
   }
 
   /* ── 3. Theme toggle ─────────────────────────────────────── */
