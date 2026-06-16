@@ -5,7 +5,7 @@ subtitle: "A story about a cache, a label I did not choose, and the difference b
 tags: [reflection, engineering, systems, caching, teamwork]
 ---
 
-> A quick note: this is a true story from an internship I did on a trust-and-safety team. I have kept the company, the people, and the internal systems vague on purpose — the engineering lesson is general enough to stand on its own, and the personal one is mine to tell.
+> A quick note: this is a true story from an internship I did. I have kept the company, the people, and the internal systems vague on purpose — the engineering lesson is general enough to stand on its own, and the personal one is mine to tell.
 
 ## A non-standard interview
 
@@ -94,7 +94,7 @@ Towards the end, the most senior engineer in the org told me he was glad he had 
 
 There is a coda, and it is probably the part that taught me the most. I wanted to come back, and I was wanted back — the whole team advocated for it, and the leader our tech lead reported to fought hard to make it happen. But for reasons beyond me, I could not return.
 
-It taught me the honest limit of "just do your best": you can give something everything you have and still find the outcome resting somewhere beyond your control. That used to trouble me. It genuinely does not anymore. I did right by the people who were in the room with me, and I learned more in those few months than in almost any other stretch of my career so far.
+It taught me the honest limit of "just do your best": you can give something everything you have and still find the outcome resting somewhere beyond your control. That used to trouble me. It genuinely does not anymore. I did right by the people who were in the room with me, and it felt like years of knowledge and life lessons condensed into a few short months.
 
 If there is a thread running through all of this — and through every internship I have done — it is that each one was a mix of success and setback, and that everything seems to happen for a reason. Each of these stints grew me technically and, more importantly, helped me mature as a person. I am deeply grateful to the team I worked with — for betting on me, for the late nights, and for everything they taught me. Thank you. And I could not be happier about where it all led: I am at Canva now, and I genuinely could not have asked for a more amazing start (though that is a story for another post). The virtue I keep returning to is to stay hungry for knowledge, stay open to feedback, believe in yourself, and do your absolute best — because when you do, even the things that do not work out are ones you can walk away from without regret.
 
