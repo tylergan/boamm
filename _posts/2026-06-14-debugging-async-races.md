@@ -22,7 +22,25 @@ async function refresh() {
 }
 ```
 
-If a user triggered `refresh()` twice quickly, an older, slower response could land *after* a newer one and overwrite it. The fix was to track the latest request and ignore stale responses:
+If a user triggered `refresh()` twice quickly, an older, slower response could land *after* a newer one and overwrite it:
+
+```mermaid
+sequenceDiagram
+    participant U as User
+    participant A as refresh() #35;1
+    participant B as refresh() #35;2
+    participant S as Server
+    U->>A: trigger (wants OLD data)
+    U->>B: trigger again (wants NEW data)
+    B->>S: fetchList()
+    A->>S: fetchList()
+    S-->>B: NEW data
+    Note over B: setState(NEW) ✓
+    S-->>A: OLD data (slower)
+    Note over A: setState(OLD) ✗ stale wins
+```
+
+The fix was to track the latest request and ignore stale responses:
 
 ```ts
 let latest = 0;
