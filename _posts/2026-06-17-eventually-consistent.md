@@ -70,17 +70,13 @@ There is an irony in all of this that I could not have appreciated at the time. 
 
 ## The number I almost did not answer
 
-I was on a client site, in the middle of a meeting, when my phone rang with a number I did not recognise.
+I was on a client site, in the middle of a meeting, when my phone rang with a number I did not recognise. I do not normally answer numbers I do not know, but for some reason I chose to answer the call. It was talent recruitment from Canva, and they told me a one-off role had opened up and asked me if I would be open to coming back.
 
-I do not normally answer numbers I do not know, but for some reason I chose to answer the call. It was talent recruitment from Canva, and they told me a one-off role had opened up and asked me if I would be open to coming back.
-
-Obviously, I said yes with no questions asked — I did not know which team it was, or what the role actually involved, and in that moment none of that felt important. In fact, I was far past playing it cool that I told a few colleagues a week later that I would potentially be leaving before I had anything in writing, which, in hindsight, was a fairly reckless thing to do about a job I did not yet officially have. As it turned out, by the end of that same day of breaking the news to colleagues, the offer was confirmed on a call, the details were filled in, and the email arrived that evening.
-
-I had been told, not long before, that the answer was "no". It took a long and fairly uncertain detour, but the world converged, eventually, on "yes".
+Obviously, I said yes with no questions asked — I did not know which team it was, or what the role actually involved, and in that moment none of that felt important. In fact, I was far past playing it cool that I told a few colleagues a week later that I would potentially be leaving before I had anything in writing, which, in hindsight, was very reckless, though the time to reflect on my impulsiveness was short lived as the offer was shortly confirmed later.
 
 ## The first thing they handed me
 
-It turned out they had real work waiting. The context of my first project: there were several systems producing data about how teams across the company managed their infrastructure, and we wanted to understand one thing — were people actually adopting our **in-house way of provisioning and reconciling resources**, or were they still reaching for [Terraform](https://www.terraform.io/)?
+The context of my first project was that there were several systems producing data about how teams across the company managed their infrastructure, and we wanted to understand one thing — were people actually adopting our **in-house way of provisioning and reconciling resources**, or were they still reaching for [Terraform](https://www.terraform.io/)?
 
 The shape of the pipeline was a standard one. Pull from the sources and land the data **raw** — the [ELT](https://en.wikipedia.org/wiki/Extract,_load,_transform) instinct, sometimes called the "sushi principle": keep it raw, cook it later — then stream it in with [Snowpipe](https://docs.snowflake.com/en/user-guide/data-load-snowpipe-intro), model it in [Snowflake](https://www.snowflake.com/) using [dbt](https://www.getdbt.com/), and surface the result through a [Mode](https://mode.com/) dashboard:
 
