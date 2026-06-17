@@ -131,7 +131,7 @@ So the discipline I am settling into has three parts. First, I plan strictly, an
 
 Currently, I am working on our brand-new configuration system, which tackles the load-bearing problem of how configuration gets authored, validated, and safely delivered to a lot of services.
 
-Besides picking up a little exposure to [Envoy](https://www.envoyproxy.io/), [Envoy Gateway](https://gateway.envoyproxy.io/), [Istio](https://istio.io/), and the [xDS protocol](https://www.envoyproxy.io/docs/envoy/latest/api-docs/xds_protocol), a small yet fun learning experience was figuring out how to reliably call a binary cross-repo. I published the binary to an internal **artifact repository** — somewhere that hands back the exact same immutable version on every request, which is what makes a build [hermetic](https://bazel.build/basics/hermeticity) and reproducible — and from there I had two options: curl the binary down each time I needed it, or bake that pinned binary into a container image at build time and run it from there. I went for the latter:
+Besides picking up a little exposure to [Envoy](https://www.envoyproxy.io/), [Envoy Gateway](https://gateway.envoyproxy.io/), [Istio](https://istio.io/), and the [xDS protocol](https://www.envoyproxy.io/docs/envoy/latest/api-docs/xds_protocol), a small yet fun learning experience was figuring out how to reliably call a binary cross-repo. I published the binary to an internal **artifact repository** — somewhere that hands back the exact same immutable version on every request, which is what makes a build [hermetic](https://bazel.build/basics/hermeticity) and reproducible — and from there I had two options: curl the binary down each time I needed it, or bake that pinned binary into a container image at build time and run it from there. I went for the latter to cut down on the ad-hoc network calls we made every time CI spun up:
 
 ```mermaid
 flowchart LR
@@ -140,8 +140,6 @@ flowchart LR
     REPO -->|"pull a pinned version at build time"| BUILD
     BUILD --> IMG["New image — binary baked into a layer"]
 ```
-
-The image itself is assembled declaratively — a base image plus a thin layer carrying my binary — using the kind of tooling that builds images from packages rather than from a hand-written Dockerfile (the [Wolfi](https://github.com/wolfi-dev) / [apko](https://github.com/chainguard-dev/apko) world). The original motivation was to move dependency-fetching — for things like my binary — out of the pipeline's runtime and into the build itself, cutting down on the ad-hoc network calls we made every time CI spun up. From there, the binary publishes the rendered configuration files up to our control plane, which in turn distributes them out to its subscribers.
 
 To a senior engineer, baking a binary into a container is probably routine, but as an associate it was genuinely one of the most exciting things I have done. It is these small learning experiences that make me grateful to be a young associate engineer — I am allowed to make mistakes, and there is so much still to learn. I do wonder how much that will change as I progress through my career.
 
