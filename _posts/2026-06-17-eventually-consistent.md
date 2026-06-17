@@ -72,7 +72,7 @@ There is an irony in all of this that I could not have appreciated at the time. 
 
 I was on a client site, in the middle of a meeting, when my phone rang with a number I did not recognise.
 
-I do not normally answer numbers I do not know, and I never really have, but for some reason that I cannot reconstruct or take any credit for, that day I picked up. It was talent recruitment from Canva, and they told me a one-off role had opened up and asked me if I would be open to coming back.
+I do not normally answer numbers I do not know, but for some reason I chose to answer the call. It was talent recruitment from Canva, and they told me a one-off role had opened up and asked me if I would be open to coming back.
 
 Obviously, I said yes with no questions asked — I did not know which team it was, or what the role actually involved, and in that moment none of that felt important. In fact, I was far past playing it cool that I told a few colleagues a week later that I would potentially be leaving before I had anything in writing, which, in hindsight, was a fairly reckless thing to do about a job I did not yet officially have. As it turned out, by the end of that same day of breaking the news to colleagues, the offer was confirmed on a call, the details were filled in, and the email arrived that evening.
 
