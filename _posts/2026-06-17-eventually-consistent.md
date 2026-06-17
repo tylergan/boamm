@@ -5,7 +5,7 @@ subtitle: "A story about a rejection I did not see coming, a phone call I almost
 tags: [reflection, engineering, systems, distributed-systems, ai, growth]
 ---
 
-> Another true story, and a sequel to the last one. As before, I have kept the specifics deliberately vague — internal systems are abstracted, names are left out, and anything that is not mine to share stays out. The one company I will name is Canva, because it is where I work now, and because this is the story of how I got here. It did not happen the way it might look from the outside.
+> Another true story, and a sequel to the last one. This is the story of how I got to Canva and some high level explanation of the systems I worked on. How I got here did not happen the way it might look from the outside.
 
 My last post ended on a promise — that how I came to be at Canva was "a story for another post." This is that post.
 
