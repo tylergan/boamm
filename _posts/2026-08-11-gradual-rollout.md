@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Gradual Rollout"
-subtitle: "A story about an arc reactor, a phone that needed charging, seven over-engineered attempts at a simple problem, and why I am grateful that AI has made my mistakes affordable."
+subtitle: "A story about seven over-engineered attempts at a simple problem, and why I am grateful that AI has made my mistakes affordable."
 tags: [reflection, engineering, ai, growth, simplicity]
 ---
 
