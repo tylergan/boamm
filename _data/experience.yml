@@ -4,13 +4,16 @@
 #  bullet points for an entry.
 # ──────────────────────────────────────────────────────────────
 
-- when: "Mar 2026 — Present"
-  role: "Associate Software Engineer"
+- when: "Feb 2026 — Present"
+  role: "Software Engineer"
   org: "Canva"
-  summary: "Infrastructure · Platform Enablement · Configuration"
+  summary: "Infrastructure · Configuration · Developer Tooling"
   points:
-    - "Changing how Canva writes and dispatches configuration."
-    - "Engineering and enabling initiatives like analytics for our PaaS platform."
+    - "Built IDE support (autocomplete, go-to-definition, hover docs) for Canva's internal config language, taking it from my own prototype to a company-wide launch for 3,000+ engineers."
+    - "Led the migration of the data warehouse's infrastructure config — 456 services owned by 300+ engineers — onto the new engine in 5 weeks, with zero change to what was deployed."
+    - "Own the release pipeline for Configurator, Canva's new config distribution service: teams ship a config to production by merging a PR, live in under a minute to hundreds of internal applications."
+    - "Launched Configurator in Canva's China region in 7 business days, coordinating five infrastructure teams."
+    - "Built the dashboard that gave platform leadership its first view of PaaS adoption, used for end-of-year investment planning."
 
 - when: "Aug 2025 — Jan 2026"
   role: "Management Consulting Analyst"

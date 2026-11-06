@@ -25,7 +25,7 @@ Reflection is how I check that I'm actually learning, not just busy. Writing an 
 
 ## What I'm focused on right now
 
-- Changing how Canva writes and dispatches configuration, and building analytics for our PaaS platform.
+- Shipping config at Canva: the Configurator release pipeline, and IDE tooling for our internal config language.
 - Getting deeply fluent in a large, mature codebase — reading before writing.
 - Connecting the engineering I do day-to-day to the finance and macro trends I follow. <!-- EDIT ME — tweak freely -->
 
